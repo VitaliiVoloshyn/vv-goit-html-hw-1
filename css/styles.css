@@ -17,6 +17,8 @@ img{
 }
 button{
     cursor: pointer ;
+    
+
 }
 .list {
     list-style: none;
@@ -32,7 +34,7 @@ body{
     
 }
 .container{
-    width: 1128px;
+    width: 1158px;
     margin-left: auto ;
     margin-right: auto;
     padding-left: 15px;
@@ -53,6 +55,9 @@ background-color:#FFFFFF;
    display: flex; 
    padding-top: 24px;
    padding-bottom: 24px;
+   border-bottom: 1px;
+   stroke:  #E7E9FC;
+   stroke:Solid;
 }
 .page-header-container{
   display: flex;  
@@ -69,6 +74,7 @@ background-color:#FFFFFF;
     text-transform: uppercase;
     color: #4D5AE5;  
     margin-right: 76px;
+    display: inline-block;
 }
 .logo-text{
     font-family: 'Raleway', sans-serif;
@@ -93,6 +99,8 @@ background-color:#FFFFFF;
 .menu-nav{
     display: flex; 
     align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .menu-nav:hover{
 color: #404bbf;  
@@ -104,6 +112,7 @@ color: #404bbf;
 .menu {
     display: flex;
     align-items: center;
+  
 }  
 .menu-item{
     font-weight: 500;
@@ -111,7 +120,7 @@ color: #404bbf;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2E2F42;
-
+    gap: 40px;
 }
 .menu-item:not(:last-child){
 margin-right: 40px;
@@ -147,8 +156,8 @@ margin-right: 40px;
     font-size: 16px;
     line-height: 1.5;
     list-style: none;
-    
-    
+    padding-top: 24px;
+    padding-bottom: 24px;
     letter-spacing: 0.02em;
     color: #434455;
 }
@@ -183,6 +192,33 @@ margin-right: 40px;
 .contact:focus{
     color: #404bbf ;
 }
+
+/*--Hero--*/
+.hero{
+    background: #2E2F42;
+    width: 1440px;
+    height: 600px;
+  
+  
+}
+.hero-container{
+ padding-top: 188px;
+ padding-bottom: 188px;
+ align-items: center;
+}
+.hero-text{
+    
+color: #FFFFFF;
+font-family: "Roboto", sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 1.07;
+
+letter-spacing: 0.02em;
+max-width: 496px;
+
+}
 .btn{
 font-family: 'Roboto', sans-serif;
 font-weight: 500;
@@ -198,10 +234,13 @@ padding-left: 32px;
 border-radius: 4px;
 background-color: #4D5AE5;
 cursor: pointer ;
+min-width: 169px ;
+height: 56px ;
+border: none;
+}
+.btn-item{
 
-
-
-
+    
 }
 .btn:hover{
     background-color: #404BBF; 
@@ -210,28 +249,7 @@ cursor: pointer ;
     background-color: #404BBF;
 }
 
-/*--Hero--*/
-.hero{
-    background: #2E2F42;
-    width: 1440px;
-    height: 600px;
 
-}
-.hero-text{
-    
-color: #FFFFFF;
-font-family: "Roboto", sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 56px;
-line-height: 1.07;
-text-align: center;
-letter-spacing: 0.02em;
-padding-top: 188px;
-padding-bottom: 292px;
-padding-left: 472px;
-padding-right: 472px;
-}
 
 
 /*--About--*/
@@ -246,7 +264,7 @@ padding-right: 472px;
     line-height:1.11;
     text-align: center;
     text-transform: capitalize;
-  
+    margin-bottom: 72px;
     letter-spacing: 0.02em;
   padding-bottom: 72px;
     color: #2E2F42;
@@ -265,19 +283,20 @@ padding-right: 472px;
     overflow: hidden;
   }
 .about-title {
-    font-family: "Roboto", sans-serif;
+font-family: "Roboto", sans-serif;
 font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2E2F42;
+margin-bottom: 8px;
 }
 
 .about-list{
     display: flex;
     justify-content:space-between ;
-   
+    gap: 24px;
 }
 .about-item {
 
@@ -295,7 +314,8 @@ color: #434455;
 }
 /*--Results--*/
 .results{
- 
+    padding-top: 120px;
+    padding-bottom: 120px;
     
 }
 .results-list{
@@ -319,14 +339,14 @@ color: #434455;
 background-color:#F4F4FD;
 display: flex;
 flex-wrap: wrap;
-
+border-radius: 0px 0px 4px 4px;
 }
 .team-item:not(:nth-child(4n)){
     margin-right: 24px;
 }
 .team-item{
     background-color: #FFFFFF;
-   
+    border-radius: 0px 0px 4px 4px;
 }
 .team-name {
 font-family: "Roboto", sans-serif;
@@ -337,6 +357,7 @@ line-height:1.2;
 text-align: center;
 letter-spacing: 0.02em;
 color: #2E2F42;
+margin-bottom: 8px;
 }
 .team-place {
     font-family: "Roboto", sans-serif;
@@ -353,7 +374,8 @@ color: #2E2F42;
     background: #2E2F42;
     width: 1440px;
     height: 312px;
-
+    padding-top: 100px; 
+    padding-bottom: 100px;
 }
 .footer-text {
 font-family: "Roboto", sans-serif;
@@ -367,19 +389,18 @@ color: #F4F4FD;
 
 }
 .footer-item{
-    width:264px ;
-    height: 112px;
+  width:264px ;
+  min-height: 112px;
   padding-left:156px ;
   padding-top: 100px;
+
 
 }
 .logo-text-footer{
     color: #f4f4fd;
 }
 .logo-footer{
-    margin-top: 200px;
-    margin-bottom: 88px;
-    margin-right: 156px;
+    margin-bottom: 16px;
     
 }
 /*--Portfolio--*/
