@@ -164,15 +164,16 @@ margin-right: 40px;
     font-size: 16px;
     line-height: 1.5;
     list-style: none;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    
     letter-spacing: 0.02em;
     color: #434455;
 }
 .contact-list{
     list-style: none;
     display: flex;
-   
+    padding-top: 24px;
+    padding-bottom: 24px;
+    gap: 40px;
 }
 .contact {
     color: #434455;
@@ -356,15 +357,14 @@ background-color:#F4F4FD;
 display: flex;
 flex-wrap: wrap;
 border-radius: 0px 0px 4px 4px;
+gap: 24px;
+}
 
-}
-.team-item:not(:nth-child(4n)){
-    margin-right: 24px;
-}
+
 .team-item{
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
- 
+    width: calc((100% - 72px) / 4);
 }
 .team-text{
     padding-top: 32px;
