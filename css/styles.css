@@ -112,7 +112,7 @@ color: #404bbf;
 .menu {
     display: flex;
     align-items: center;
-  
+    gap: 40px;
 }  
 .menu-item{
     font-weight: 500;
@@ -131,6 +131,7 @@ margin-right: 40px;
 .menu-item:focus{
     color: #404bbf;   
 }
+
 
 .menu-link{
     color: #2E2F42;
@@ -322,9 +323,10 @@ color: #434455;
     display: flex;
     justify-content:space-between ;
     flex-wrap: wrap;
+    gap: 24px; 
 }
 .results-item{
-
+    gap: 24px; 
 }
 .result-item:not(:nth-child(3n)){
     margin-right: 24px;
@@ -333,13 +335,16 @@ color: #434455;
 .team-container{
  background-color: #F4F4FD ;
  width: 1440px;
- height: 732px;
+ padding-top: 120px;
+ padding-bottom: 120px;
+
 }
 .team-list{
 background-color:#F4F4FD;
 display: flex;
 flex-wrap: wrap;
 border-radius: 0px 0px 4px 4px;
+
 }
 .team-item:not(:nth-child(4n)){
     margin-right: 24px;
@@ -347,6 +352,13 @@ border-radius: 0px 0px 4px 4px;
 .team-item{
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
+ 
+}
+.team-text{
+    padding-top: 32px;
+    padding-bottom: 32px; 
+    padding-left: 16px; 
+    padding-right: 16px;
 }
 .team-name {
 font-family: "Roboto", sans-serif;
@@ -358,6 +370,7 @@ text-align: center;
 letter-spacing: 0.02em;
 color: #2E2F42;
 margin-bottom: 8px;
+
 }
 .team-place {
     font-family: "Roboto", sans-serif;
