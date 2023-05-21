@@ -55,14 +55,14 @@ background-color:#FFFFFF;
    display: flex; 
    padding-top: 24px;
    padding-bottom: 24px;
-   border-bottom: 1px;
-   stroke:  #E7E9FC;
-   stroke:Solid;
+   border-bottom: 1px solid #e7e9fc;
 }
 .page-header-container{
   display: flex;  
   align-items: center;
   justify-content:space-between ;
+  width: 1158px;
+  border-bottom: 1px solid #e7e9fc;
 }
 .logo{  
     font-family: 'Raleway', sans-serif;
@@ -101,6 +101,7 @@ background-color:#FFFFFF;
     align-items: center;
     padding-top: 24px;
     padding-bottom: 24px;
+    gap: 40px ;
 }
 .menu-nav:hover{
 color: #404bbf;  
@@ -113,6 +114,8 @@ color: #404bbf;
     display: flex;
     align-items: center;
     gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }  
 .menu-item{
     font-weight: 500;
@@ -199,12 +202,14 @@ margin-right: 40px;
     background: #2E2F42;
     width: 1440px;
     height: 600px;
-  
+    display: flex;
+    flex-direction: column;
+    padding-top: 188px;
+    padding-bottom: 188px;
   
 }
 .hero-container{
- padding-top: 188px;
- padding-bottom: 188px;
+
  align-items: center;
 }
 .hero-text{
@@ -323,7 +328,10 @@ color: #434455;
     display: flex;
     justify-content:space-between ;
     flex-wrap: wrap;
-    gap: 24px; 
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    flex-basis: calc((100% - 3 * 24px)/4);
 }
 .results-item{
     gap: 24px; 
@@ -439,7 +447,9 @@ margin-bottom: 72px;
   margin-bottom: 72px;
   display: flex;  
   align-items: center;
-  justify-content:space-between ;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
 }
 .filter-item{
 justify-content: center;
@@ -447,7 +457,7 @@ justify-content: center;
 .filter-item:not(:last-child){
     margin-right: 24px;
 }
-.button{
+.button-filter{
 font-family: "Roboto", sans-serif;
 font-weight: 500; 
 font-size: 16px;
@@ -464,12 +474,12 @@ border: 1px ;
 stroke:solid , #e7e9fc ; 
 border-radius: 4px;
 }
-.button:hover{
+.button-filter:hover{
     color: #FFFFFF;
     background-color: #404BBF;
     border: 1px solid transparent;
 }
-.button:focus{
+.bbutton-filter:focus{
     color: #FFFFFF;
     background-color: #404BBF;
     border: 1px solid transparent;
@@ -483,12 +493,20 @@ padding-bottom: 48px;
  list-style: none;
  text-decoration: none;
  display: flex; 
+ flex-wrap: wrap;
+ row-gap: 48px;
  
 
  
 }
 .row-item{
-    text-decoration: none 
+    text-decoration: none ;
+   
+}
+.row-app{
+    padding: 32px 16px ; 
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 .row-item:not(:nth-child(3n)){
     margin-right: 24px;
@@ -504,6 +522,7 @@ font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
+margin-bottom: 8px;
 }
 .row-place{
 color: #434455;
