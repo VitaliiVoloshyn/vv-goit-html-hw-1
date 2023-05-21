@@ -56,12 +56,13 @@ background-color:#FFFFFF;
    padding-top: 24px;
    padding-bottom: 24px;
    border-bottom: 1px solid #e7e9fc;
+   width: 1158px;
 }
 .page-header-container{
   display: flex;  
   align-items: center;
   justify-content:space-between ;
-  width: 1158px;
+ 
   border-bottom: 1px solid #e7e9fc;
 }
 .logo{  
@@ -118,12 +119,15 @@ color: #404bbf;
     padding-bottom: 24px;
 }  
 .menu-item{
+    display: flex;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2E2F42;
     gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .menu-item:not(:last-child){
 margin-right: 40px;
@@ -301,11 +305,11 @@ margin-bottom: 8px;
 
 .about-list{
     display: flex;
-    justify-content:space-between ;
     gap: 24px;
 }
 .about-item {
-
+max-width: 264px;
+width: calc((100-72px)/4) ;
 }
 .about-text{
     font-family: "Roboto", sans-serif;
