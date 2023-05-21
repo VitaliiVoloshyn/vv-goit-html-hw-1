@@ -423,20 +423,26 @@ height: 2076px;
 }
 
 /*--Filters--*/
+.portfolio{
+    padding-top: 96px; 
+    padding-bottom: 120px;
+}
+.portfolio-main{
+
+}
 .filter{
 width: 586px;
 height: 48px;
-padding-top: 96px;
-padding-bottom: 72px;
+margin-bottom: 72px;
 }
 .filter-list{
-   
+  margin-bottom: 72px;
   display: flex;  
   align-items: center;
   justify-content:space-between ;
 }
 .filter-item{
-
+justify-content: center;
 }
 .filter-item:not(:last-child){
     margin-right: 24px;
@@ -450,15 +456,23 @@ letter-spacing: 0.04em;
 color: #4d5ae5 ;
 background-color:#F4F4FD ;
 cursor: pointer ;
-
+padding-top: 12px;
+padding-bottom: 12px; 
+padding-left: 24px; 
+padding-right: 24px;
+border: 1px ;
+stroke:solid , #e7e9fc ; 
+border-radius: 4px;
 }
 .button:hover{
     color: #FFFFFF;
     background-color: #404BBF;
+    border: 1px solid transparent;
 }
 .button:focus{
     color: #FFFFFF;
     background-color: #404BBF;
+    border: 1px solid transparent;
 }
 /*-Row-*/
 .row{
