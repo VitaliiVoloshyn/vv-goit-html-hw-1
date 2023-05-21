@@ -283,7 +283,7 @@ border: none;
     color: #2E2F42;
 }
 
-.visually-hidden{
+.hidden{
     position: absolute;
     width: 1px;
     height: 1px;
