@@ -283,7 +283,7 @@ border: none;
     color: #2E2F42;
 }
 
-.hidden {
+.visually-hidden{
     position: absolute;
     width: 1px;
     height: 1px;
@@ -506,7 +506,7 @@ border-radius: 4px;
 }
 .row-item{
     text-decoration: none ;
-   width: calc((100% - 48px) / 3) 
+   width: calc((100% - 48px) / 3); 
 }
 
 .row-app{
