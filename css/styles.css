@@ -110,7 +110,7 @@ color: #404bbf;
     
 }  
 .menu-item{
-    display: flex;
+   
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -195,30 +195,33 @@ color: #404bbf;
 /*--Hero--*/
 .hero{
     background: #2E2F42;
-   
-   
     padding-top: 188px;
     padding-bottom: 188px;
-  
-}
-
-.hero-text{
     
+}
+.hero-text{
 color: #FFFFFF;
 font-family: "Roboto", sans-serif;
 font-style: normal;
 font-weight: 700;
 font-size: 56px;
 line-height: 1.07;
+display:block;
 margin-left: auto;
+margin-right: auto;
+
 letter-spacing: 0.02em;
 max-width: 496px;
-
 }
 .btn{
+margin-top: 48px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+
 font-family: 'Roboto', sans-serif;
 font-weight: 500;
-position: absolute;
+
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em ;
@@ -233,8 +236,9 @@ cursor: pointer ;
 min-width: 169px ;
 height: 56px ;
 border: none;
-margin-left: auto;
-margin-top: 48px;
+
+
+
 }
 
 
